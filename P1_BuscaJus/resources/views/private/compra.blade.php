@@ -102,9 +102,7 @@ html,
                   <a href="/editar/{{ $advogado['id'] }}" class="dark-grey-text">
                     <span class="badge badge-pill primary-color">Editar Advogado</span>                    
                   </a>
-                  <a href="/agendar/{{ $advogado['id'] }}" class="dark-grey-text">
-                    <span class="badge badge-pill success-color">Agendar consulta</span>
-                  </a>
+                  
               </div>
               <!--Card content-->
 

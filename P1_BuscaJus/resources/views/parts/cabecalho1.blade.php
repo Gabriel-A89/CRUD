@@ -83,18 +83,6 @@
           <li class="{{ (request()->is('servico')) ? 'active' : '' }}">
             <a class="nav-link" href="/servico">Serviço<span class="sr-only">(current)</span></a>
           </li>
-          <li class="{{ (request()->is('empresa')) ? 'active' : '' }}">
-            <a class="nav-link" href="/empresa">Empresa</a>
-          </li>
-          <li class="{{ (request()->is('contato')) ? 'active' : '' }}">
-            <a class="nav-link" href="/contato">Contato</a>
-          </li>
-          <li class="{{ (request()->is('local')) ? 'active' : '' }}">
-            <a class="nav-link" href="/local">Local</a>
-          </li>
-          <li class="{{ (request()->is('comentario')) ? 'active' : '' }}">
-            <a class="nav-link" href="/comentario">Comentários</a>
-          </li>
           <li class="{{ (request()->is('compra')) ? 'active' : '' }}">
             <a class="nav-link" href="/compra">Contratar nosso serviço</a>
           </li>
