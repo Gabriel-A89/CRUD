@@ -51,9 +51,11 @@ html,
       <!--/.Navbar-->
 
       <!--Section: Products v.3-->
+      
       <section class="text-center mb-4">
-        <a href="/adicionar" class="dark-grey-text">
-          <span class="badge badge-pill success-color">Adicionar advogado</span>
+        <h1 style="color: #d32f2f;" class="font-weight-bold text-center">ESCOLHER ADVOGADO</h1>
+        <a href="/adicionar" class="dark-grey-text btn-lg">
+          <span class="badge badge-pill danger-color"><i class="far fa-user mx-2"></i>Adicionar advogado</span>
         </a>
       </section>
       <section class="text-center mb-4">
@@ -84,24 +86,27 @@ html,
                   <!-- <h5>Advogada civil</h5> -->
                   <h5>{{ $advogado['ramo'] }}</h5>
                 </a>
-                <h5>
+                <h5 >
                   <strong>
                     <!-- <a href="" class="dark-grey-text">Maria Pereira -->
-                    <a href="" class="dark-grey-text">{{ $advogado['nome'] }}
-                      <span class="badge badge-pill danger-color">Novo</span>
+                    <a href="#" class="dark-grey-text">{{ $advogado['nome'] }}
+                      <span class="badge badge-pill danger-color my-1">Novo</span>
                     </a>
                   </strong>
                 </h5>
 
                 <h4 class="font-weight-bold blue-text">
-                  <strong>R$ 120 a consulta</strong>
-                </h4>                  
-                  <a href="compra/{{ $advogado['id'] }}" class="dark-grey-text">{{ $advogado['nome'] }}
+                  <strong><h6> R$ 120 a consulta</h6> </strong>
+                </h4>
+                
+                <div class="container-btns d-flex align-items-center w-100">
+                  <a href="compra/{{ $advogado['id'] }}" class="dark-grey-text w-50 ">
                     <span class="badge badge-pill danger-color">Deletar Advogado</span>                    
                   </a>
-                  <a href="/editar/{{ $advogado['id'] }}" class="dark-grey-text">
-                    <span class="badge badge-pill primary-color">Editar Advogado</span>                    
+                  <a href="/editar/{{ $advogado['id'] }}" class="dark-grey-text w-50 ">
+                    <span class="badge badge-pill primary-color">  Editar Advogado</span>                    
                   </a>
+                </div>
                   
               </div>
               <!--Card content-->
